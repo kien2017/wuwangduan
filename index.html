@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script type="text/javascript" src="instascan.min.js"></script>
+
+  <script type="text/javascript">
+    window.$ = window.jQuery = require('./jquery-3.2.1.min.js')
+  </script>
+
+  <script src="bootstrap.min.js"></script>
+  <title>geli qianbao duan wang duan</title>
+</head>
+
+<body>
+
+  <p>
+    <select id="selectnet" class="btn btn-success btn-lg">
+  <option value="testnet">Testnet</option>
+  <option value="livenet">Livenet</option>
+</select>
+   <div id="sign" class="btn btn-success btn-lg">sign</div>
+ 
+  <div id="listaddresses" class="btn btn-success btn-lg">list addresses</div>
+    <div id="addprivatekeys" class="btn btn-success btn-lg">add privatekeys</div>
+    <div id="textarea_privatekeys" style="display: none">
+  <textarea rows="10" cols="80" id="textarea_privatekeys"></textarea>
+  <div id="add" class="btn btn-success btn-lg">add</div>
+    </div>
+  
+
+  <ul></ul>
+  <video id="preview"></video>
+  <canvas id="displayqrcode"></canvas>
+  
+</p>
+  
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+
+</body>
+
+</html>

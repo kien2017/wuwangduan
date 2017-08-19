@@ -1,0 +1,14 @@
+{
+  "name": "bitcoin-sign",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "me",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "nedb": "^1.8.0",
+    "qrcode": "^0.9.0"
+  }
+}
